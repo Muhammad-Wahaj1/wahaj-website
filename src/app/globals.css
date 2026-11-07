@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
+  --muted: 220 14% 69%;
+  --border: 215 27% 22%;
+  --card: 222 47% 13%;
+  --card-foreground: 210 40% 98%;
+  --primary: 199 94% 63%;
+  --primary-foreground: 222 47% 11%;
+  --accent: 221 83% 53%;
+  --accent-foreground: 210 40% 98%;
+  --secondary: 217 33% 17%;
+  --secondary-foreground: 210 40% 98%;
+}
+
+.light {
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
+  --muted: 220 14% 46%;
+  --border: 214 32% 91%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --primary: 199 94% 48%;
+  --primary-foreground: 222 47% 11%;
+  --accent: 221 83% 53%;
+  --accent-foreground: 210 40% 98%;
+  --secondary: 214 32% 96%;
+  --secondary-foreground: 222 47% 11%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  background-image: radial-gradient(circle at top, rgba(56, 189, 248, 0.08), transparent 18%);
+}
+
+* {
+  @apply border-border;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.35);
+}
+
+@layer components {
+  .container-shell {
+    @apply mx-auto max-w-7xl px-4 md:px-8;
+  }
+
+  .section-shell {
+    @apply py-20;
+  }
+
+  .card-surface {
+    @apply rounded-3xl border border-border bg-card/80 shadow-soft;
+  }
+}

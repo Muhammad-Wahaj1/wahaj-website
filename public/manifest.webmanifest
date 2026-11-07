@@ -1,0 +1,11 @@
+{
+  "name": "Muhammad Wahaj | Cloud & DevOps Engineer",
+  "short_name": "Wahaj Portfolio",
+  "description": "Portfolio website for Muhammad Wahaj, Cloud & DevOps Engineer.",
+  "theme_color": "#020817",
+  "background_color": "#020817",
+  "display": "standalone",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
