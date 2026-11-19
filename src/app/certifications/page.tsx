@@ -20,7 +20,7 @@ export default function CertificationsPage() {
               </div>
               <span className="rounded-xl border border-primary/30 bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary">{cert.badge}</span>
             </div>
-            <p className="mt-5 text-sm text-muted-foreground">Issued: {cert.date}</p>
+            <p className="mt-5 text-sm text-muted-foreground">we: {cert.date}</p>
             {cert.credentialUrl ? (
               <Button asChild variant="secondary" className="mt-6">
                 <a href={cert.credentialUrl} target="_blank" rel="noreferrer">Verify credential</a>
